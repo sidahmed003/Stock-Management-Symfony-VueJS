@@ -1,0 +1,9 @@
+# config/packages/doctrine_mongodb.yaml
+doctrine_mongodb:
+    connections:
+        default:
+            server: '%env(MONGODB_URL)%'
+    default_database: stock
+    document_managers:
+        default:
+            auto_mapping: true
