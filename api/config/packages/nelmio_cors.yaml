@@ -1,0 +1,11 @@
+# api/config/packages/nelmio_cors.yaml
+nelmio_cors:
+    defaults:
+        allow_origin: ['http://localhost:5173']  # le port de l'app VueJS
+        allow_credentials: true
+        allow_headers: ['Content-Type', 'Authorization']
+        expose_headers: ['Link']
+        allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+        max_age: 3600
+    paths:
+        '^/': ~
